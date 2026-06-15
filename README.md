@@ -102,7 +102,7 @@ This project is open-source and available under the **MIT License**.
 
 ## Author
 
-* **Brajesh**
+* **Meghana**
 * GitHub: https://github.com/Meghana2888
 
 ---
