@@ -103,7 +103,7 @@ This project is open-source and available under the **MIT License**.
 ## Author
 
 * **Brajesh**
-* GitHub: https://github.com/brajesh995
+* GitHub: https://github.com/Meghana2888
 
 ---
 
