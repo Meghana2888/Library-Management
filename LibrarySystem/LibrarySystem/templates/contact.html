@@ -1,0 +1,147 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Library Management System</title>
+    <link rel="stylesheet" href="styles/contact.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0b0f19; 
+            padding: 0;
+            color: white;
+        }
+        
+        .contact-wrapper {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background: #1a1f2b;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.15);
+            text-align: center;
+        }
+        
+        
+        header {
+            padding: 15px;
+            background: #0b0f19; 
+            color: #00d4ff; 
+            font-size: 24px;
+            border-radius: 12px 12px 0 0;
+            font-weight: bold;
+        }
+        
+        .contact-section h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info {
+            background: #151a27; /* Slightly darker section */
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+        }
+        
+        .contact-info p {
+            margin: 8px 0;
+            font-size: 16px;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: center;
+        }
+        
+        input, textarea {
+            width: 90%;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            font-size: 14px;
+            background: #202636;
+            color: white;
+            outline: none;
+            transition: 0.3s ease-in-out;
+            box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.1);
+        }
+        
+        input:focus, textarea:focus {
+            background: #252d42;
+            box-shadow: 0 0 8px rgba(0, 212, 255, 0.6);
+        }
+        
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+        
+        button {
+            padding: 12px 20px;
+            background: #00d4ff;
+            border: none;
+            color: black;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s ease-in-out;
+        }
+        
+        button:hover {
+            background: #00b8e6;
+            box-shadow: 0 0 10px rgba(0, 212, 255, 0.7);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background: #151a27;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-wrapper">
+        <header>
+            <h1>Contact Us</h1>
+        </header>
+        
+        <main>
+            <section class="contact-section">
+                
+                <h3><p>If you have any questions, feel free to reach out to us!</p></h3>
+                
+                <div class="contact-info">
+                    <p><strong>Address:</strong> 123 Library Street, Cityville</p>
+                    <p><strong>Phone:</strong> +123 456 7890</p>
+                    <p><strong>Email:</strong> support@library.com</p>
+                </div>
+                
+                <form id="contact-form" onsubmit="sendEmail(event)">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <input type="text" id="subject" placeholder="Subject" required>
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>                 
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 Library Management System. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="/static/contact.js"></script>
+
+
+</body>
+</html>
